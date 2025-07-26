@@ -79,6 +79,17 @@ export default function Home() {
               />
             </div>
           </div>
+
+          {/* Image statique en dessous du titre à gauche */}
+          <div className="mb-16 -ml-80 -mt-80">
+            <Image
+              src="/logo.png"
+              alt="BeeAware Logo"
+              width={300}
+              height={300}
+              className="rounded-lg"
+            />
+          </div>
         </div>
       </main>
 
