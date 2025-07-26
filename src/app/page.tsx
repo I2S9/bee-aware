@@ -8,7 +8,7 @@ export default function Home() {
       {/* Navbar Glassmorphique */}
       <nav className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50">
         <div className="bg-black/80 backdrop-blur-md rounded-full border border-white/20 shadow-lg">
-          <div className="flex items-center px-12 py-5">
+          <div className="flex items-center px-12 py-4">
             {/* Logo */}
             <div className="flex items-center mr-6">
               <button 
@@ -27,19 +27,19 @@ export default function Home() {
             
             {/* Navigation Links - Centrés */}
             <div className="hidden md:flex items-center space-x-10">
-              <a href="#" className="text-white hover:text-amber-500 transition-colors duration-200 font-medium text-lg">
+              <a href="#" className="text-white hover:text-amber-500 transition-colors duration-200 font-medium text-2xl font-kinlove">
                 Map
               </a>
-              <a href="#" className="text-white hover:text-amber-500 transition-colors duration-200 font-medium text-lg">
+              <a href="#" className="text-white hover:text-amber-500 transition-colors duration-200 font-medium text-2xl font-kinlove">
                 Data Visualisation
               </a>
-              <a href="#" className="text-white hover:text-amber-500 transition-colors duration-200 font-medium text-lg">
+              <a href="#" className="text-white hover:text-amber-500 transition-colors duration-200 font-medium text-2xl font-kinlove">
                 AI Predictions
               </a>
-              <a href="#" className="text-white hover:text-amber-500 transition-colors duration-200 font-medium text-lg">
+              <a href="#" className="text-white hover:text-amber-500 transition-colors duration-200 font-medium text-2xl font-kinlove">
                 Education
               </a>
-              <a href="#" className="text-white hover:text-amber-500 transition-colors duration-200 font-medium text-lg">
+              <a href="#" className="text-white hover:text-amber-500 transition-colors duration-200 font-medium text-2xl font-kinlove">
                 Citizen Science
               </a>
             </div>
@@ -57,9 +57,29 @@ export default function Home() {
       </nav>
       
       {/* Contenu principal */}
-      <main className="pt-24 px-4">
-        <div className="max-w-7xl mx-auto">
-          {/* Ici vous pouvez ajouter le contenu de votre page */}
+      <main className="pt-60">
+        <div className="max-w-6xl mx-auto px-8">
+          {/* Section Titre et Image */}
+          <div className="flex items-center justify-between mb-16">
+            {/* Titre à gauche */}
+            <div className="flex-1 pr-16">
+              <div className="text-6xl font-black text-gray-800 font-kinlove leading-tight">
+                <div>Protect Pollinators.</div>
+                <div>Predict the Future.</div>
+              </div>
+            </div>
+            
+            {/* Image à droite */}
+            <div className="flex-1 flex justify-end pl-16">
+              <Image
+                src="/honey-bis.png"
+                alt="Honey"
+                width={500}
+                height={500}
+                className="rounded-2xl"
+              />
+            </div>
+          </div>
         </div>
       </main>
     </div>
