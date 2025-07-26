@@ -6,7 +6,7 @@ import React from "react"; // Added for React.Fragment or other potential uses, 
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen">
       {/* Navbar Glassmorphique */}
       <nav className="fixed top-8 left-1/2 transform -translate-x-1/2 z-50">
         <div className="bg-gray-900/80 backdrop-blur-xl rounded-full border border-white/30 shadow-2xl">
