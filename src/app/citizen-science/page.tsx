@@ -2,9 +2,8 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import React from "react"; // Added for React.Fragment or other potential uses, though not explicitly used in the snippet
 
-export default function Home() {
+export default function CitizenSciencePage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Navbar Glassmorphique */}
@@ -38,7 +37,7 @@ export default function Home() {
               <a href="/education" className="text-white hover:text-amber-500 transition-colors duration-200 font-medium text-2xl font-kinlove">
                 Education
               </a>
-              <a href="/citizen-science" className="text-white hover:text-amber-500 transition-colors duration-200 font-medium text-2xl font-kinlove">
+              <a href="/citizen-science" className="text-amber-500 font-medium text-2xl font-kinlove">
                 Citizen Science
               </a>
             </div>
@@ -58,26 +57,11 @@ export default function Home() {
       {/* Contenu principal */}
       <main className="pt-60">
         <div className="max-w-6xl mx-auto px-8">
-          {/* Section Titre et Image */}
-          <div className="flex items-center justify-between mb-16">
-            {/* Titre à gauche */}
-            <div className="flex-1 pr-16">
-              <div className="text-6xl font-black text-gray-800 font-kinlove leading-tight">
-                <div>Protect Pollinators.</div>
-                <div>Predict the Future.</div>
-              </div>
-            </div>
-            
-            {/* Image à droite */}
-            <div className="flex-1 flex justify-end pl-16">
-              <Image
-                src="/honey-bis.png"
-                alt="Honey"
-                width={500}
-                height={500}
-                className="rounded-2xl"
-              />
-            </div>
+          {/* Titre centré */}
+          <div className="flex items-center justify-center mb-16">
+            <h1 className="text-8xl font-black text-gray-800 font-kinlove">
+              Citizen Science
+            </h1>
           </div>
         </div>
       </main>
@@ -138,4 +122,4 @@ export default function Home() {
       </footer>
     </div>
   );
-}
+} 
